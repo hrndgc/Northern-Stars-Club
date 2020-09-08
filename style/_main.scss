@@ -1,0 +1,38 @@
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    #hero {
+        color: #ffffff;
+        height: 50vh;
+        width: auto;
+        font-family: $heroTextFont;
+        font-size: 7rem;
+        line-height: $heroLineHeight;
+        vertical-align: center;
+        letter-spacing: 0.5rem;
+        margin-top: 8rem;
+    }
+    #advantages {
+        flex-grow: 1;
+        ul {
+            border: 0.2rem solid #000000;
+            background-color: white;
+            box-sizing: border-box;
+            box-shadow: 0 0.3rem 0.3rem rgba(14, 14, 250, 0.3);
+            border-radius: 1rem;
+            padding-left: 2rem;
+            padding: 3.5rem;
+            position: relative;
+            bottom: 20vh;
+            left: 15vw;
+            li {
+                font-family: $otherTextFont;
+                font-size: 3rem;
+                list-style: circle;
+            }
+        }
+    }
+}

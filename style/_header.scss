@@ -1,0 +1,43 @@
+header {
+    height: 15vh;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 0.2rem solid #e2e2e2;
+    img {
+        height: 60%;
+        width: 17vw;
+        margin-left: 2rem;
+        &:hover {
+            box-shadow: 0 0 0.5rem red;
+            cursor: pointer;
+        }
+    }
+    .navbar {
+        a {
+            text-decoration: none;
+            font-family: $otherTextFont;
+            font-size: $navTextSize;
+            line-height: $otherLineHeight;
+            margin-right: 2rem;
+        }
+        &__logins {
+            &--left {
+                color: #ffffff;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            &--right {
+                color: #ff0000;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .empty {
+        flex-grow: 1;
+    }
+}

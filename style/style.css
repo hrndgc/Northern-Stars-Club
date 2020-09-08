@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&family=Roboto&display=swap");
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: url("https://picsum.photos/800/600?random=2"), rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+header {
+  height: 15vh;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 0.2rem solid #e2e2e2;
+}
+
+header img {
+  height: 60%;
+  width: 17vw;
+  margin-left: 2rem;
+}
+
+header img:hover {
+  -webkit-box-shadow: 0 0 0.5rem red;
+          box-shadow: 0 0 0.5rem red;
+  cursor: pointer;
+}
+
+header .navbar a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 2rem;
+  line-height: 1rem;
+  margin-right: 2rem;
+}
+
+header .navbar__logins--left {
+  color: #ffffff;
+}
+
+header .navbar__logins--left:hover {
+  text-decoration: underline;
+}
+
+header .navbar__logins--right {
+  color: #ff0000;
+}
+
+header .navbar__logins--right:hover {
+  text-decoration: underline;
+}
+
+header .empty {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #hero {
+  color: #ffffff;
+  height: 50vh;
+  width: auto;
+  font-family: "Modak";
+  font-size: 7rem;
+  line-height: 8rem;
+  vertical-align: center;
+  letter-spacing: 0.5rem;
+  margin-top: 8rem;
+}
+
+main #advantages {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main #advantages ul {
+  border: 0.2rem solid #000000;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0.3rem 0.3rem rgba(14, 14, 250, 0.3);
+          box-shadow: 0 0.3rem 0.3rem rgba(14, 14, 250, 0.3);
+  border-radius: 1rem;
+  padding-left: 2rem;
+  padding: 3.5rem;
+  position: relative;
+  bottom: 20vh;
+  left: 15vw;
+}
+
+main #advantages ul li {
+  font-family: "Roboto";
+  font-size: 3rem;
+  list-style: circle;
+}
+
+@media screen and (max-width: 305px) {
+  html {
+    font-size: 7px;
+  }
+  main {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  main #hero {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  main #advantages {
+    position: static;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  main #advantages ul {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 3.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

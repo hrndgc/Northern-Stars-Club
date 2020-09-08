@@ -1,0 +1,32 @@
+@import "globals";
+@import "reset";
+@import "header";
+@import "main";
+@media screen and (max-width:305px) {
+    html {
+        font-size: 7px;
+    }
+    main {
+        display: block;
+        margin: 0;
+        padding: 0;
+        #hero {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #advantages {
+            position: static;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            ul {
+                position: static;
+                width: 90%;
+                margin: 0 auto;
+                padding-left: 3.5rem;
+            }
+        }
+    }
+}
